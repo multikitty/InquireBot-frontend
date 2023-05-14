@@ -32,6 +32,7 @@
 		"react-jvectormap": "0.0.16",
 		"react-router-dom": "5.2.1",
 		"react-scripts": "5.0.0",
+		"react-scroll": "^1.8.9",
 		"react-swipeable-views": "0.14.0",
 		"react-table": "7.7.0",
 		"react-tagsinput": "3.19.0",
