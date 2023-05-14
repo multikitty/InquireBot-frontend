@@ -21,6 +21,7 @@ import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import { AuthProvider } from "./auth-context/auth.context";
 
+import LandingPageLayout from "layouts/Landing.js";
 import AuthLayout from "layouts/Auth.js";
 import AdminLayout from "layouts/Admin.js";
 import RTLLayout from "layouts/RTL.js";
@@ -35,7 +36,8 @@ ReactDOM.render(
         <Route path={`/auth`} component={AuthLayout} />
         <Route path={`/admin`} component={AdminLayout} />
         <Route path={`/rtl`} component={RTLLayout} />
-        <Redirect from={`/`} to="/admin/dashboard" />
+        <Route path={`/landing`} component={LandingPageLayout} />
+        <Redirect from={`/`} to="/landing" />
       </Switch>
     </HashRouter>
   </AuthProvider>,
